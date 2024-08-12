@@ -1,0 +1,179 @@
+#creations {
+  width: 100%;
+  height: fit-content;
+  background-color: #efefef;
+}
+
+.creations {
+  width: 970px;
+  padding: 152px 15px 0;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: minmax(160px, auto);
+}
+
+.creations img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.g-box1 {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+
+.g-box1 h3 {
+  width: 270px;
+  font-size: 28px;
+  position: relative;
+  margin-bottom: 24px;
+  z-index: 2;
+}
+
+.g-box1 h3::after {
+  content: "";
+  width: 100%;
+  height: 15px;
+  background-color: #ee54946b;
+  position: absolute;
+  bottom: -2px;
+  left: -15px;
+  z-index: -1;
+}
+
+.g-box1 p {
+  width: 270px;
+  color: gray;
+  line-height: 1.5rem;
+}
+
+.g-box3 {
+  position: relative;
+}
+
+.g-box3::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: #fdd368;
+  position: absolute;
+  top: -200%;
+  right: -5%;
+}
+
+.g-box3::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: #ee5495;
+  position: absolute;
+  top: -100%;
+  right: 100%;
+}
+
+.g-box2,
+.g-box8,
+.g-box12 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.g-box10 {
+  grid-column: span 3;
+  grid-row: span 3;
+}
+
+.g-box14 {
+  width: 100%;
+  height: 100%;
+  background-color: #f0b63e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.g-box14 svg {
+  stroke: #000;
+  width: 90px;
+  height: 90px;
+}
+
+@media (max-width: 1400px) {
+  .creations {
+    width: 815px;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .g-box6,
+  .g-box7,
+  .g-box9,
+  .g-box11 {
+    order: 2;
+  }
+
+  .g-box3::before,
+  .g-box3::after {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .creations {
+    width: 660px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .g-box10,
+  .g-box1 {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  .g-box6 {
+    order: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .creations {
+    width: 500px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .g-box7,
+  .g-box9,
+  .g-box11 {
+    order: 0;
+  }
+
+  .g-box12 {
+    order: 1;
+  }
+}
+
+@media (max-width: 550px) {
+  .creations {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .g-box7,
+  .g-box9,
+  .g-box11 {
+    order: 0;
+  }
+
+  .g-box1 {
+    grid-row: span 1;
+  }
+
+  .g-box1 h3,
+  .g-box1 p {
+    width: 100%;
+  }
+
+  .g-box12 {
+    order: 1;
+  }
+}

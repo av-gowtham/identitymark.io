@@ -3,6 +3,7 @@
   height: fit-content;
   padding: 120px 0 80px;
   position: relative;
+  background-color: #efefef;
 }
 
 #instantly::before {
@@ -12,7 +13,7 @@
   background-color: #9caed9;
   position: absolute;
   top: 0;
-  z-index: -1;
+  z-index: 0;
 }
 
 .instantly {
@@ -22,6 +23,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 1;
 }
 
 .instantly h2 {

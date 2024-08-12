@@ -28,11 +28,9 @@ function App() {
       <Build />
       <Chat />
       <Instantly />
+      <Creations />
       <Features />
       <Footer />
-      {/* 
-      <Creations />
-      */}
     </>
   );
 }
