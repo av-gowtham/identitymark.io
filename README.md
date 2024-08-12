@@ -1,6 +1,6 @@
 # Identitymark.io
 
-This project is a web page for Identitymark.io, built using React and Vite. The webpage showcases recent customer designs and provides users with a seamless interface to explore various branding options.
+This project is a web page for Identitymark.io, built using React and Vite. The webpage showcases recent customer designs, provides current weather details through the OpenWeatherMap API, and includes some animations for enhanced user experience.
 
 ## Table of Contents
 
@@ -17,14 +17,21 @@ This project is a web page for Identitymark.io, built using React and Vite. The 
 ## Features
 
 - Responsive design with CSS Grid for showcasing recent customer creations.
+- Current weather details integrated via the OpenWeatherMap API.
+- Animated elements for an engaging user experience.
 - Fast and optimized build using Vite.
 - Modular and maintainable React components.
 
 ## Technologies Used
 
+- **JavaScript**: Programming language used to create dynamic and interactive content.
+- **HTML**: Markup language for structuring the web page.
+- **CSS**: Styling language used to create visually appealing designs.
 - **React**: JavaScript library for building user interfaces.
 - **Vite**: Next-generation front-end tooling for fast development and optimized builds.
 - **CSS Grid**: For creating responsive and flexible grid layouts.
+- **OpenWeatherMap API**: To fetch and display current weather details.
+- **Animations**: Various CSS and JavaScript animations for improved user experience.
 
 ## Getting Started
 
@@ -95,7 +102,8 @@ identitymark.io/
 │   ├── components/   # React components
 │   ├── styles/       # CSS files
 │   ├── App.jsx       # Main application component
-│   └── main.jsx      # Entry point for the application
+│   ├── main.jsx      # Entry point for the application
+│   └── weather.js    # Integration with OpenWeatherMap API
 ├── index.html        # Main HTML file
 ├── package.json      # NPM/Yarn dependencies and scripts
 └── README.md         # Project documentation
