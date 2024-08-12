@@ -47,7 +47,7 @@ Make sure you have the following installed on your local development machine:
 Clone the repository and install the dependencies:
 
 ```bash
-git clone https://github.com/your-username/identitymark.io.git
+git clone https://github.com/av-gowtham/identitymark.io.git
 cd identitymark.io
 npm install
 ```
@@ -55,7 +55,7 @@ npm install
 Or if you prefer using yarn:
 
 ```bash
-git clone https://github.com/your-username/identitymark.io.git
+git clone https://github.com/av-gowtham/identitymark.io.git
 cd identitymark.io
 yarn install
 ```
