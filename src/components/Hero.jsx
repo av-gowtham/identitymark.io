@@ -1,6 +1,6 @@
 import "../hero.css";
 
-function Hero() {
+function Hero({ children }) {
   return (
     <div className="hero">
       <div className="hero-container">
@@ -19,6 +19,7 @@ function Hero() {
           </a>
         </div>
       </div>
+      {children}
     </div>
   );
 }
