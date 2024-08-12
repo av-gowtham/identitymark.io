@@ -1,0 +1,114 @@
+.nav-slider {
+  position: fixed;
+  height: 100dvh;
+  width: 240px;
+  top: 0;
+  right: -240px;
+  background-color: #1e293d;
+  color: #92b1e1;
+  z-index: 999;
+  transition: all 0.4s linear;
+}
+
+.open {
+  right: 0;
+}
+
+.slider-logo {
+  height: 65px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  background-color: #192333;
+}
+
+.slider-logo p {
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.slider-logo span {
+  color: #cfe0f5;
+}
+
+.slider-menu {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+}
+
+.nav-menu svg {
+  height: 16px;
+  width: 16px;
+  margin: 0 0 0 5px;
+  transition: all 0.25s;
+}
+
+.slider-menu > svg,
+.slider-list svg {
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  padding: 10px;
+  background-color: #3a4d67;
+  transition: all 0.25s;
+}
+
+.slider-menu:hover {
+  color: #fff;
+}
+
+.slider-menu:hover svg {
+  stroke: #fff;
+}
+
+.slider-list {
+  height: 0px;
+  overflow: hidden;
+  transition: all 0.5s linear;
+}
+
+.drop-down {
+  height: 250px;
+}
+
+.slider-list a {
+  height: 60px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px 10px 25px;
+}
+
+.slider-list a p {
+  color: #92b1e1;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.25s;
+}
+
+.slider-list a svg {
+  transition: all 0.25s;
+}
+
+.slider-list a:hover p {
+  color: #fff;
+}
+
+.slider-list a:hover svg {
+  stroke: #fff;
+}

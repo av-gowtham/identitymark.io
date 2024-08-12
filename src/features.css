@@ -1,0 +1,311 @@
+#features {
+  height: fit-content;
+  width: 100%;
+  background-color: #efefef;
+  padding: 0 0 60px 0;
+}
+
+.features {
+  width: 940px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.features-list {
+  margin-bottom: 90px;
+  display: flex;
+  flex-direction: column;
+}
+
+.features-list1,
+.features-list2,
+.features-list3,
+.features-list4,
+.features-list5 {
+  display: flex;
+}
+
+.list-logo-1,
+.list-logo-2,
+.list-logo-3,
+.list-logo-4,
+.list-logo-5 {
+  width: 460px;
+  display: flex;
+}
+
+.list-logo-1,
+.list-logo-3,
+.list-logo-5 {
+  justify-content: flex-end;
+}
+
+.list-logo-2,
+.list-logo-4 {
+  order: 1;
+}
+
+.list-logo-1 div,
+.list-logo-2 div,
+.list-logo-3 div,
+.list-logo-4 div,
+.list-logo-5 div {
+  height: 150px;
+  width: 150px;
+  padding: 20px;
+  background-color: rgb(111, 85, 50);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-text-1,
+.list-text-2,
+.list-text-3,
+.list-text-4,
+.list-text-5 {
+  width: 460px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.list-text-1,
+.list-text-3,
+.list-text-5 {
+  padding-left: 60px;
+}
+
+.list-text-2,
+.list-text-4 {
+  align-items: flex-end;
+  padding-right: 60px;
+}
+
+.list-text-1 h5,
+.list-text-2 h5,
+.list-text-3 h5,
+.list-text-4 h5,
+.list-text-5 h5 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.list-logo-1 div {
+  background-color: #ee5495;
+}
+
+.list-text-1 {
+  color: #ee5495;
+}
+
+.list-logo-2 div {
+  background-color: #8ecea8;
+}
+
+.list-text-2 {
+  color: #8ecea8;
+}
+
+.list-logo-3 div {
+  background-color: #9caed9;
+}
+
+.list-text-3 {
+  color: #9caed9;
+}
+
+.list-logo-4 div {
+  background-color: #f7cd56;
+}
+
+.list-text-4 {
+  color: #dcb74f;
+}
+
+.list-logo-5 div {
+  background-color: #292e34;
+}
+
+.list-text-5 {
+  color: #292e34;
+}
+
+.features-list svg {
+  width: 90px;
+  height: 90px;
+  padding: 24px;
+  border: 3.6px solid #fff;
+  border-radius: 100px;
+  transition: all 0.5s;
+}
+
+.features-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.features-bottom h2 {
+  font-size: 30px;
+  margin-bottom: 6px;
+}
+
+.features-bottom p {
+  font-size: 16px;
+  opacity: 0.7;
+  margin-bottom: 60px;
+}
+
+.features-bottom a {
+  text-decoration: none;
+}
+
+.features-bottom button {
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  padding: 18px 50px;
+  background-color: #9caed9;
+  border-radius: 100px;
+  color: #fff;
+}
+
+@media (max-width: 1400px) {
+  .features {
+    width: 815px;
+    padding: 0 15px;
+  }
+
+  .list-logo-1,
+  .list-logo-3,
+  .list-logo-5 {
+    justify-content: flex-start;
+    width: fit-content;
+  }
+
+  .list-logo-2,
+  .list-logo-4 {
+    order: 0;
+    width: 300px;
+    padding-left: 150px;
+  }
+
+  .list-text-1,
+  .list-text-3,
+  .list-text-5 {
+    padding-left: 60px;
+  }
+
+  .list-text-2,
+  .list-text-4 {
+    align-items: flex-start;
+    padding-left: 60px;
+    padding-right: 0;
+  }
+
+  .list-text-1 h5,
+  .list-text-2 h5,
+  .list-text-3 h5,
+  .list-text-4 h5,
+  .list-text-5 h5 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  .features {
+    width: 660px;
+  }
+
+  .list-logo-2,
+  .list-logo-4 {
+    width: fit-content;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .features {
+    width: 500px;
+  }
+
+  .features-bottom h2 {
+    font-size: 26px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .features {
+    width: 100%;
+  }
+
+  .features-list1,
+  .features-list2,
+  .features-list3,
+  .features-list4,
+  .features-list5 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .list-text-1,
+  .list-text-3,
+  .list-text-5 {
+    width: 100%;
+    padding-left: 0px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .list-text-2,
+  .list-text-4 {
+    width: 100%;
+    align-items: center;
+    padding-left: 0px;
+    text-align: center;
+  }
+
+  .list-logo-1 div,
+  .list-logo-2 div,
+  .list-logo-3 div,
+  .list-logo-4 div,
+  .list-logo-5 div {
+    background-color: transparent;
+  }
+
+  .features-list1 svg {
+    stroke: #ee5495;
+    border: 3.6px solid #ee5495;
+  }
+
+  .features-list2 svg {
+    stroke: #8ecea8;
+    border: 3.6px solid #8ecea8;
+  }
+
+  .features-list3 svg {
+    stroke: #9caed9;
+    border: 3.6px solid #9caed9;
+  }
+
+  .features-list4 svg {
+    stroke: #f7cd56;
+    border: 3.6px solid #f7cd56;
+  }
+
+  .features-list5 svg {
+    stroke: #292e34;
+    border: 3.6px solid #292e34;
+  }
+
+  .features-bottom h2 {
+    font-size: 24px;
+  }
+}

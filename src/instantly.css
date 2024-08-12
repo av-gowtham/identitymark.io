@@ -1,0 +1,209 @@
+#instantly {
+  width: 100%;
+  height: fit-content;
+  padding: 120px 0 80px;
+  position: relative;
+}
+
+#instantly::before {
+  content: "";
+  width: 100%;
+  height: 80%;
+  background-color: #9caed9;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.instantly {
+  width: 970px;
+  padding: 0 15px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.instantly h2 {
+  width: 100%;
+  font-size: 32px;
+  margin-bottom: 12px;
+  text-align: center;
+  color: #fff;
+}
+
+.instantly > p {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  opacity: 0.9;
+  color: #fff;
+  margin-bottom: 76px;
+}
+
+.editor {
+  position: relative;
+}
+
+.editor-panel {
+  height: 200px;
+  height: 360px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.editor div {
+  width: 160px;
+  position: absolute;
+}
+
+.editor h6 {
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 3px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.editor p {
+  text-transform: capitalize;
+  font-size: 14px;
+}
+
+.edit-text-1 {
+  top: 0;
+  left: -250px;
+}
+
+.edit-text-2 {
+  top: 150px;
+  left: -250px;
+}
+
+.edit-text-3 {
+  top: 70px;
+  right: -250px;
+}
+
+.line1,
+.line2,
+.line3 {
+  width: 150px;
+  position: absolute;
+}
+
+.line1 {
+  top: 0;
+  left: -75px;
+}
+
+.line2 {
+  left: -75px;
+  top: 50%;
+}
+
+.line3 {
+  right: -75px;
+  top: 75px;
+}
+
+@media (max-width: 1400px) {
+  .instantly {
+    width: 815px;
+  }
+
+  .line1,
+  .line2,
+  .line3 {
+    display: none;
+  }
+
+  .edit-text-1,
+  .edit-text-2 {
+    left: -180px;
+  }
+
+  .edit-text-3 {
+    right: -200px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .edit-text-1,
+  .edit-text-2 {
+    left: -150px;
+  }
+
+  .edit-text-3 {
+    right: -180px;
+  }
+}
+
+@media (max-width: 991px) {
+  #instantly {
+    padding: 75px 0 40px;
+  }
+
+  #instantly::before {
+    height: 100%;
+  }
+
+  .instantly {
+    width: 660px;
+    align-items: flex-start;
+  }
+
+  .instantly h2,
+  .instantly > p {
+    text-align: start;
+  }
+
+  .instantly > p {
+    margin-bottom: 48px;
+  }
+
+  .editor div {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  .editor h6 {
+    font-size: 18px;
+  }
+
+  .editor p {
+    font-size: 16px;
+  }
+
+  .editor img {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .instantly {
+    width: 500px;
+  }
+
+  .editor img {
+    height: 300px;
+  }
+}
+
+@media (max-width: 550px) {
+  .instantly {
+    width: 100%;
+  }
+
+  .editor img {
+    height: 300px;
+  }
+}
